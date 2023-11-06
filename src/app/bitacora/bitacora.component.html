@@ -1,0 +1,24 @@
+<div class="example-container mat-elevation-z8">
+  <mat-table #table [dataSource]="dataSource">
+    <!-- Position Column -->
+    <ng-container matColumnDef="idBitacoraAccesoApi">
+      <mat-header-cell *matHeaderCellDef> No. </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.idBitacoraAccesoApi}} </mat-cell>
+    </ng-container>
+
+    <!-- Name Column -->
+    <ng-container matColumnDef="codigoApi">
+      <mat-header-cell *matHeaderCellDef> Codigo API </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.codigoApi}} </mat-cell>
+    </ng-container>
+
+    <!-- Weight Column -->
+    <ng-container matColumnDef="fechaConsulta">
+      <mat-header-cell *matHeaderCellDef> Fecha </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.fechaConsulta}} </mat-cell>
+    </ng-container>
+
+    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+    <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+  </mat-table>
+</div>

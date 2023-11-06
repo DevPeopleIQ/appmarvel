@@ -1,0 +1,13 @@
+{
+    "/user/*": {
+      "target": "http://localhost:1127",
+      "secure": false,
+      "logLevel": "debug"
+    },
+
+    "/marvel/*": {
+      "target": "http://localhost:1127",
+      "secure": false,
+      "logLevel": "debug"
+    }
+  }

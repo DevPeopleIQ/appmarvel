@@ -1,0 +1,19 @@
+<div *ngIf="lstCharacter">
+    <br>
+    <h2 class="mb-5" style="text-align: center;">Marvel Comics</h2>
+    <owl-carousel-o>
+        <ng-container *ngFor="let character of lstCharacter">
+          <ng-template carouselSlide [id]="character.id">
+            <img [src]="character.thumbnail.path + '.' + character.thumbnail.extension" 
+            id='{{character.id}}' 
+            [alt]="character.id" [title]="character.id" height="400px" (click)='getCharacterById(character.id)'>
+          </ng-template>
+        </ng-container>
+      </owl-carousel-o>
+
+
+
+
+
+
+</div>
